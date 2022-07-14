@@ -7,6 +7,9 @@ module.exports = {
   ],
   theme: {
     extend: {},
+    fontFamily: {
+      'rubik': ['rubik'],
+    },
   },
   plugins: [
     require("preline/plugin")
