@@ -13,7 +13,7 @@ module.exports = {
     },
   },
   plugins: [
-    require("preline/plugin", "flowbite/plugin"),
+    require("preline/plugin"),
   ],
   darkMode: "class"
 }
