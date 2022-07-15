@@ -1,19 +1,11 @@
 import React, { FC } from "react"
 import Image from "next/image"
 
-import { config } from "@fortawesome/fontawesome-svg-core"
-
-import "@fortawesome/fontawesome-svg-core/styles.css"
 import "../styles/Home.module.css"
 
-config.autoAddCss = false
-
-type Props = {
-}
-
-const Header: FC<Props> = ({ }) => {
+const Header: FC = () => {
     return (
-        <header className="flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full bg-white text-sm py-4 dark:bg-gray-800">
+        <header className="relative flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full bg-white text-sm py-4 dark:bg-gray-800">
             <nav className="max-w-[85rem] w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between" aria-label="Global">
                 {/* START: Brand section */}
                 <div className="flex items-center justify-between">
