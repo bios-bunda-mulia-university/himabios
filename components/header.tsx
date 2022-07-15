@@ -41,6 +41,12 @@ const Header: FC<Props> = ({ }) => {
                                     <path d="M2 5L8.16086 10.6869C8.35239 10.8637 8.64761 10.8637 8.83914 10.6869L15 5" stroke="currentColor" strokeWidth="2" strokeLinecap="round"></path>
                                 </svg>
                             </button>
+
+                            <div className="hs-mega-menu-content hs-mega-menu-open:opacity-100 opacity-0 top-full right-0 hidden z-10 rounded-md before:absolute before:-top-5 before:left-0 before:w-full before:h-5 w-full bg-white p-2 sm:w-48 sm:transition-all sm:absolute sm:shadow-md sm:duration-300 dark:bg-gray-800" aria-labelledby="hs-mega-menu-basic-dr">
+                                <a href="#" className="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300">
+                                    Glossary
+                                </a>
+                            </div>
                         </div>
                         {/* END: Dropdown */}
                     </div>
