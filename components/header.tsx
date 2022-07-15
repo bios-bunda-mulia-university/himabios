@@ -1,8 +1,6 @@
 import React, { FC } from "react"
 import Image from "next/image"
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faCaretDown } from "@fortawesome/free-solid-svg-icons"
 import { config } from "@fortawesome/fontawesome-svg-core"
 
 import "@fortawesome/fontawesome-svg-core/styles.css"
