@@ -1,51 +1,97 @@
-import React, { FC } from "react"
+import { FC, ReactNode } from "react"
 import Image from "next/image"
+import {
+    Box,
+    Flex,
+    Text,
+    IconButton,
+    Button,
+    Stack,
+    Link,
+    useColorMode,
+    useColorModeValue,
+    useBreakpointValue,
+    useDisclosure
+} from "@chakra-ui/react"
+
+import { HamburgerIcon, CloseIcon, MoonIcon, SunIcon } from "@chakra-ui/icons"
 
 import "../styles/Home.module.css"
+import DesktopNav from "./navigations/desktopNav"
+
+const NavLink = ({ children }: { children: ReactNode }) => (
+    <Link
+        px={2}
+        py={1}
+        rounded={'md'}
+        _hover={{
+            textDecoration: 'none',
+            bg: useColorModeValue('gray.200', 'gray.700'),
+        }}
+        href={'#'}
+    >
+        {children}
+    </Link>
+)
 
 const Header: FC = () => {
+    const { colorMode, toggleColorMode } = useColorMode()
+    const { isOpen, onToggle } = useDisclosure();
+
     return (
-        <header className="relative flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full bg-white text-sm py-4 dark:bg-gray-800">
-            <nav className="max-w-[85rem] w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between" aria-label="Global">
-                {/* START: Brand section */}
-                <div className="flex items-center justify-between">
-                    <a href="#" className="inline-flex items-center gap-x-3 text-[2rem] font-semibold dark:text-white font-rubik">
-                        <Image src="https://bios-space.sfo3.digitaloceanspaces.com/logo-bios.png" alt="BIOS Logo" className="w-10 h-auto" width={50} height={50} />
-                        BIOS
-                    </a>
-                </div>
-                {/* END: Brand section */}
-
-                {/* START: Menu section */}
-                {/* TODO: Add menu (Ref: https://preline.co/docs/mega-menu.html#slide-up-animation) */}
-                <div id="navbar-with-mega-menu" className="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow sm:block">
-                    <div className="flex flex-col gap-5 mt-5 sm:flex-row sm:items-center sm:justify-start sm:mt-0 sm:pl-5">
-                        {/* TODO: Add hover effect for each menu [rounded-square-effect] */}
-                        <a href="#" className="font-regular text-[1rem] text-black font-rubik hover:text-gray-600" aria-current="page">Home</a>
-                        <a href="#" className="font-regular text-[1rem] text-black font-rubik" aria-current="page">About us</a>
-                        <a href="#" className="font-regular text-[1rem] text-black font-rubik" aria-current="page">Blog</a>
-                        <a href="#" className="font-regular text-[1rem] text-black font-rubik" aria-current="page">Showcase</a>
-                        {/* START: Dropdown */}
-                        <div className="hs-mega-menu">
-                            <button id="hs-mega-menu-basic-dr" className="font-rubik font-regular text-[1rem] hs-mega-menu-toggle hs-mega-menu-open:text-black hover:hs-mega-menu-open:text-black flex items-center w-full text-black hover:text-gray-600" type="button">
-                                More
-                                <svg className="ml-2 w-2.5 h-2.5 text-black" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M2 5L8.16086 10.6869C8.35239 10.8637 8.64761 10.8637 8.83914 10.6869L15 5" stroke="currentColor" strokeWidth="2" strokeLinecap="round"></path>
-                                </svg>
-                            </button>
-
-                            <div className="hs-mega-menu-content hs-mega-menu-open:opacity-100 opacity-0 top-full right-0 hidden z-10 rounded-md before:absolute before:-top-5 before:left-0 before:w-full before:h-5 w-full bg-white p-2 sm:w-48 sm:transition-all sm:absolute sm:shadow-md sm:duration-300 dark:bg-gray-800" aria-labelledby="hs-mega-menu-basic-dr">
-                                <a href="#" className="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300">
-                                    Glossary
-                                </a>
-                            </div>
-                        </div>
-                        {/* END: Dropdown */}
-                    </div>
-                </div>
-                {/* END: Menu section */}
-            </nav>
-        </header>
+        <Box>
+            <Flex
+                bg={useColorModeValue('white', 'gray.800')}
+                color={useColorModeValue('black', 'white')}
+                minH={'60px'}
+                py={{ base: 4, md: 6 }}
+                px={{ base: 4 }}
+                align={'center'}
+            >
+                <Flex
+                    flex={{ base: 1, md: 'auto' }}
+                    ml={{ base: -2 }}
+                    display={{ base: 'flex', md: 'none' }}
+                >
+                    <IconButton
+                        onClick={onToggle}
+                        icon={isOpen ? <CloseIcon w={3} h={3} /> : <HamburgerIcon w={5} h={5} />}
+                        variant={'ghost'}
+                        aria-label={'Toggle Navigation'}
+                    />
+                </Flex>
+                <Flex
+                    flex={{ base: 1 }}
+                    justify={{ base: 'center', md: 'start' }}
+                >
+                    <Stack direction='row' spacing={5}>
+                        <Image
+                            src="https://bios-space.sfo3.digitaloceanspaces.com/logo-bios.png"
+                            alt="BIOS Logo"
+                            width={55}
+                            height={50}
+                        />
+                        <Text
+                            textAlign={useBreakpointValue({ base: 'center', md: 'left' })}
+                            fontFamily={'heading'}
+                            color={useColorModeValue('black', 'white')}
+                            fontSize='4xl'
+                            fontWeight={600}
+                        >
+                            BIOS
+                        </Text>
+                    </Stack>
+                    <Flex display={{ base: 'none', md: 'flex' }} ml={100} alignItems={'center'}>
+                        <DesktopNav />
+                    </Flex>
+                </Flex>
+                <Flex alignItems={'center'} justifyContent={'flex-end'}>
+                    <Button onClick={toggleColorMode}>
+                        {colorMode === 'light' ? <MoonIcon /> : <SunIcon />}
+                    </Button>
+                </Flex>
+            </Flex>
+        </Box>
     )
 }
 
