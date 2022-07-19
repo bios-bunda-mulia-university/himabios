@@ -13,6 +13,7 @@
     "@chakra-ui/react": "^2.2.4",
     "@emotion/react": "11",
     "@emotion/styled": "11",
+    "@fontsource/rubik": "^4.5.10",
     "algoliasearch": "^4.13.1",
     "framer-motion": "6",
     "fullpage.js": "^4.0.9",

@@ -867,6 +867,11 @@
     minimatch "^3.1.2"
     strip-json-comments "^3.1.1"
 
+"@fontsource/rubik@^4.5.10":
+  version "4.5.10"
+  resolved "https://registry.yarnpkg.com/@fontsource/rubik/-/rubik-4.5.10.tgz#da291ed751850d9f79d957a23369125aacb20f03"
+  integrity sha512-VQuuko0lAKgI6p9lylpeJ/xcG/FpQqUYgPC+NUwVGvYvZNSQYT20UT13MKjPk2bPuxSuSHeeOyZ9x/6eRy4pfQ==
+
 "@humanwhocodes/config-array@^0.9.2":
   version "0.9.5"
   resolved "https://registry.yarnpkg.com/@humanwhocodes/config-array/-/config-array-0.9.5.tgz#2cbaf9a89460da24b5ca6531b8bbfc23e1df50c7"
