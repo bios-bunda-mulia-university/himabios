@@ -78,6 +78,7 @@ const Header: FC = () => {
                     </Button>
                 </Flex>
             </Flex>
+            <ParticlesBackground />
         </Box>
     )
 }
