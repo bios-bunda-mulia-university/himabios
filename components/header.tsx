@@ -20,7 +20,6 @@ import "../styles/Home.module.css"
 import DesktopNav from "./navigations/desktopNav"
 import ParticlesBackground from "./particle"
 
-
 const Header: FC = () => {
     const { colorMode, toggleColorMode } = useColorMode()
     const { isOpen, onToggle } = useDisclosure();
