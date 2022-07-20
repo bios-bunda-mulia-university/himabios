@@ -28,7 +28,7 @@ const Header: FC = () => {
     return (
         <Box>
             <Flex
-                bg={useColorModeValue('white', 'gray.800')}
+                bg={useColorModeValue('transparent', 'transparent')}
                 color={useColorModeValue('black', 'white')}
                 minH={'60px'}
                 py={{ base: 4, md: 6 }}
