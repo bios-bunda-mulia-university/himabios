@@ -11,6 +11,11 @@ const theme = extendTheme({
     },
     fonts: {
         heading: `'Rubik', sans-serif`,
+    },
+    colors: {
+        transparent: 'transparent',
+        darkMode: '#151019',
+        lightMode: '#EEEEEE'
     }
 })
 
