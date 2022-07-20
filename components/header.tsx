@@ -18,21 +18,8 @@ import { HamburgerIcon, CloseIcon, MoonIcon, SunIcon } from "@chakra-ui/icons"
 
 import "../styles/Home.module.css"
 import DesktopNav from "./navigations/desktopNav"
+import ParticlesBackground from "./particle"
 
-const NavLink = ({ children }: { children: ReactNode }) => (
-    <Link
-        px={2}
-        py={1}
-        rounded={'md'}
-        _hover={{
-            textDecoration: 'none',
-            bg: useColorModeValue('gray.200', 'gray.700'),
-        }}
-        href={'#'}
-    >
-        {children}
-    </Link>
-)
 
 const Header: FC = () => {
     const { colorMode, toggleColorMode } = useColorMode()
