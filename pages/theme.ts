@@ -16,6 +16,15 @@ const theme = extendTheme({
         transparent: 'transparent',
         darkMode: '#151019',
         lightMode: '#EEEEEE'
+    },
+    semanticTokens: {
+        colors: {
+            // Change the colors of chakra dark/light mode
+            "chakra-body-bg": {
+                _light: "lightMode",
+                _dark: "darkMode",
+            }
+        }
     }
 })
 
