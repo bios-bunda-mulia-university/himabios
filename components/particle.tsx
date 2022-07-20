@@ -65,10 +65,10 @@ const ParticlesBackground: FC = () => {
                 },
                 particles: {
                     color: {
-                        value: colorMode === 'light' ? "#333333" : "#88C8FF",
+                        value: colorMode === 'light' ? "#43E97B" : "#38F9D7",
                     },
                     links: {
-                        color: colorMode === 'light' ? "#333333" : "#88C8FF",
+                        color: colorMode === 'light' ? "#43E97B" : "#38F9D7",
                         distance: 150,
                         enable: true,
                         opacity: 0.5,
