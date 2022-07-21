@@ -13,7 +13,7 @@ import DesktopSubNav from "./desktopSubNav"
 
 const DesktopNav: FC = () => {
     const linkColor = useColorModeValue('black', 'white')
-    const linkHoverColor = useColorModeValue('gray.800', 'white')
+    const linkHoverColor = useColorModeValue('green.400', 'gray.400')
     const popoverContentBgColor = useColorModeValue('white', 'gray.800')
 
     return (

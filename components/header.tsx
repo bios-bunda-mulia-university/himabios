@@ -18,21 +18,7 @@ import { HamburgerIcon, CloseIcon, MoonIcon, SunIcon } from "@chakra-ui/icons"
 
 import "../styles/Home.module.css"
 import DesktopNav from "./navigations/desktopNav"
-
-const NavLink = ({ children }: { children: ReactNode }) => (
-    <Link
-        px={2}
-        py={1}
-        rounded={'md'}
-        _hover={{
-            textDecoration: 'none',
-            bg: useColorModeValue('gray.200', 'gray.700'),
-        }}
-        href={'#'}
-    >
-        {children}
-    </Link>
-)
+import ParticlesBackground from "./particle"
 
 const Header: FC = () => {
     const { colorMode, toggleColorMode } = useColorMode()
@@ -41,7 +27,7 @@ const Header: FC = () => {
     return (
         <Box>
             <Flex
-                bg={useColorModeValue('white', 'gray.800')}
+                bg={useColorModeValue('transparent', 'transparent')}
                 color={useColorModeValue('black', 'white')}
                 minH={'60px'}
                 py={{ base: 4, md: 6 }}
@@ -91,6 +77,7 @@ const Header: FC = () => {
                     </Button>
                 </Flex>
             </Flex>
+            <ParticlesBackground id="tsparticles" />
         </Box>
     )
 }
