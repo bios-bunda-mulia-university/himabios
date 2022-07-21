@@ -77,7 +77,7 @@ const Header: FC = () => {
                     </Button>
                 </Flex>
             </Flex>
-            <ParticlesBackground />
+            <ParticlesBackground id="tsparticles" />
         </Box>
     )
 }
