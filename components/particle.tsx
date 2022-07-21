@@ -3,9 +3,12 @@ import Particles from "react-tsparticles"
 import { loadFull } from "tsparticles"
 import { useColorMode, useColorModeValue } from "@chakra-ui/react"
 import type { Engine } from "tsparticles-engine"
-import { ISourceOptions } from "tsparticles-engine"
 
-const ParticlesBackground: FC = () => {
+type Props = {
+    id: string
+}
+
+const ParticlesBackground: FC<Props> = ({ id }) => {
     const { colorMode, toggleColorMode } = useColorMode()
 
     // init particles engine
@@ -15,7 +18,7 @@ const ParticlesBackground: FC = () => {
 
     return (
         <Particles
-            id="tsparticles"
+            id={id}
             init={particlesInit}
             // loaded={particlesLoaded}
             options={{
