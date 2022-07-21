@@ -3,7 +3,7 @@ import Particles from "react-tsparticles"
 import { loadFull } from "tsparticles"
 import { useColorMode } from "@chakra-ui/react"
 import type { Engine } from "tsparticles-engine"
-import { ISourceOptions } from "tsparticles-engine"
+import { ISourceOptions, Container } from "tsparticles-engine"
 
 type Props = {
     id: string
@@ -49,7 +49,7 @@ const ParticlesBackground: FC<Props> = ({ id }) => {
                     width: 1,
                 },
                 collisions: {
-                    enable: true,
+                    enable: false,
                 },
                 move: {
                     direction: "none",
@@ -79,7 +79,7 @@ const ParticlesBackground: FC<Props> = ({ id }) => {
                         max: 5,
                     },
                 },
-                detectRetina: true,
+                detectRetina: false,
             },
         }
     }, [colorMode])
@@ -89,11 +89,16 @@ const ParticlesBackground: FC<Props> = ({ id }) => {
         await loadFull(engine)
     }, [])
 
+    // loaded particles engine
+    const particlesLoaded = useCallback(async (container: Container | undefined) => {
+        await console.log(container)
+    }, [])
+
     return (
         <Particles
             id={id}
             init={particlesInit}
-            // loaded={particlesLoaded}
+            loaded={particlesLoaded}
             options={options}
         />
     )
