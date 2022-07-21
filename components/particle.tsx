@@ -11,7 +11,7 @@ const ParticlesBackground: FC = () => {
     // init particles engine
     const particlesInit = useCallback(async (engine: Engine) => {
         await loadFull(engine)
-    }, []) 
+    }, [])
 
     return (
         <Particles
@@ -44,10 +44,10 @@ const ParticlesBackground: FC = () => {
                 },
                 particles: {
                     color: {
-                        value: colorMode === 'light' ? "#43E97B" : "#38F9D7",
+                        value: colorMode === 'light' ? "#1F8843" : "#43E97B",
                     },
                     links: {
-                        color: colorMode === 'light' ? "#43E97B" : "#38F9D7",
+                        color: colorMode === 'light' ? "#1F8843" : "#43E97B",
                         distance: 150,
                         enable: true,
                         opacity: 0.5,
