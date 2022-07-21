@@ -1,7 +1,7 @@
 import { FC, useCallback, useEffect, useMemo } from "react"
 import Particles from "react-tsparticles"
 import { loadFull } from "tsparticles"
-import { useColorMode, useColorModeValue } from "@chakra-ui/react"
+import { useColorMode } from "@chakra-ui/react"
 import type { Engine } from "tsparticles-engine"
 
 type Props = {
@@ -9,7 +9,7 @@ type Props = {
 }
 
 const ParticlesBackground: FC<Props> = ({ id }) => {
-    const { colorMode, toggleColorMode } = useColorMode()
+    const { colorMode } = useColorMode()
 
     // init particles engine
     const particlesInit = useCallback(async (engine: Engine) => {
