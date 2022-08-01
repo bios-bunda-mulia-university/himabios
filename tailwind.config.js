@@ -5,29 +5,29 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    colors: {
-      'primary': {
-        light: {
-          main: '#1F8843',
-          surface: '#D2E7D9',
-          border: '#B4D7C0',
-          hover: '#1A7138',
-          pressed: '#0F4421',
-          focus: '#D9FBE5'
-        },
-        dark: {
-          main: '#43E97B',
-          surface: '#D9FBE5',
-          border: '#C0F8D3',
-          hover: '#38C266',
-          pressed: '#21743D',
-          focus: '#43E97B'
-        },
-      },
-      black: '#000000',
-      white: '#FFFFFF',
-    },
     extend: {
+      colors: {
+        'primary': {
+          light: {
+            main: '#1F8843',
+            surface: '#D2E7D9',
+            border: '#B4D7C0',
+            hover: '#1A7138',
+            pressed: '#0F4421',
+            focus: '#D9FBE5'
+          },
+          dark: {
+            main: '#43E97B',
+            surface: '#D9FBE5',
+            border: '#C0F8D3',
+            hover: '#38C266',
+            pressed: '#21743D',
+            focus: '#43E97B'
+          },
+        },
+        black: '#000000',
+        white: '#FFFFFF',
+      },
       opacity: {
         '08': '0.08',
         '38': '0.38',
