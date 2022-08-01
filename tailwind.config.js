@@ -24,6 +24,8 @@ module.exports = {
           focus: '#43E97B'
         },
       },
+      black: '#000000',
+      white: '#FFFFFF',
     },
     extend: {
       opacity: {
