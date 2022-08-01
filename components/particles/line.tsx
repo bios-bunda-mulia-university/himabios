@@ -1,0 +1,105 @@
+import { FC, useCallback, useMemo } from "react"
+import Particles from "react-tsparticles"
+import { loadFull } from "tsparticles"
+import type { Engine, ISourceOptions, Container } from "tsparticles-engine"
+
+type Props = {
+    id: string
+}
+
+const Line: FC<Props> = ({ id }) => {
+    const options: ISourceOptions = useMemo(() => {
+        return {
+            fpsLimit: 120,
+            background: {
+                color: {
+                    value: "#F5F5F5",
+                },
+            },
+            interactivity: {
+                events: {
+                    onClick: {
+                        enable: true,
+                        mode: "push",
+                    },
+                    onHover: {
+                        enable: true,
+                        mode: "repulse",
+                    },
+                    resize: true,
+                },
+                modes: {
+                    push: {
+                        quantity: 5,
+                    },
+                    repulse: {
+                        distance: 200,
+                        duration: 0.4,
+                    },
+                },
+            },
+            particles: {
+                color: {
+                    value: "#1F8843",
+                },
+                links: {
+                    color: "#1F8843",
+                    distance: 150,
+                    enable: true,
+                    opacity: 0.5,
+                    width: 1,
+                },
+                collisions: {
+                    enable: false,
+                },
+                move: {
+                    direction: "none",
+                    enable: true,
+                    outModes: "bounce",
+                    random: false,
+                    speed: 3,
+                    straight: false,
+                },
+                number: {
+                    density: {
+                        enable: true,
+                        area: 800,
+                    },
+                    value: 80,
+                },
+                opacity: {
+                    value: 0.5,
+                },
+                shape: {
+                    type: "circle",
+                },
+                size: {
+                    random: true,
+                    value: { min: 1, max: 5 },
+                },
+            },
+            detectRetina: false,
+        }
+    }, [])
+
+    // init particles engine
+    const particlesInit = useCallback(async (engine: Engine) => {
+        await loadFull(engine)
+    }, [])
+
+    // loaded particles engine
+    const particlesLoaded = useCallback(async (container: Container | undefined) => {
+        await console.log(container)
+    }, [])
+
+    return (
+        <Particles
+            id={id}
+            init={particlesInit}
+            loaded={particlesLoaded}
+            options={options}
+        />
+    )
+}
+
+export default Line
