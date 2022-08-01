@@ -28,6 +28,11 @@ const Home: NextPage = () => {
         <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
         <meta name="theme-color" content="#ffffff" />
       </Head>
+      
+      <main>
+        <Header />
+        <Line id="tsparticles" />
+      </main>
     </div>
   )
 }
