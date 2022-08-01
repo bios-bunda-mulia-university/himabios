@@ -2,7 +2,7 @@ import Link from "next/link"
 import { FC } from "react"
 import { NAV_ITEMS } from "./itemsList"
 
-const DesktopView: FC = () => {
+const MenuDesktopView: FC = () => {
     return (
         <div className="flex flex-row justify-start items-center px-16">
             {NAV_ITEMS.map((navItem) => (
@@ -16,4 +16,4 @@ const DesktopView: FC = () => {
     )
 }
 
-export default DesktopView
+export default MenuDesktopView
