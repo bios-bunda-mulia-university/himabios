@@ -4,7 +4,7 @@ import { faMagnifyingGlass, faSun } from "@fortawesome/free-solid-svg-icons"
 
 const IconNav: FC = () => {
     return (
-        <div className="flex flex-row space-x-8 items-center justify-end mx-70 px-2 z-10">
+        <div className="flex flex-row space-x-8 items-center justify-end px-2 z-10">
             <button>
                 <FontAwesomeIcon icon={faMagnifyingGlass} color="#404040" size="lg" />
             </button>
