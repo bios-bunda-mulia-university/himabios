@@ -11,11 +11,6 @@ const Line: FC<Props> = ({ id }) => {
     const options: ISourceOptions = useMemo(() => {
         return {
             fpsLimit: 120,
-            background: {
-                color: {
-                    value: "#F5F5F5",
-                },
-            },
             interactivity: {
                 events: {
                     onClick: {
