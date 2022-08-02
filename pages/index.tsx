@@ -30,7 +30,7 @@ const Home: NextPage = () => {
         <meta name="theme-color" content="#ffffff" />
       </Head>
 
-      <main>
+      <main className="bg-neutral-100">
         <Header />
         <Hero />
         <Line id="tsparticles" />
