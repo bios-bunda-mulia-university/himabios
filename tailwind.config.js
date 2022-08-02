@@ -25,6 +25,8 @@ module.exports = {
             focus: '#43E97B'
           },
         },
+        'carribean-green': '#3ED9A1',
+        turquoise: '#31D9BB',
         black: '#000000',
         white: '#FFFFFF',
       },
