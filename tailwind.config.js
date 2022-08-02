@@ -6,6 +6,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      margin: {
+        70: '70rem',
+      },
       colors: {
         'primary': {
           light: {
