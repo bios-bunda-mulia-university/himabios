@@ -1,5 +1,6 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
+import Hero from '../components/body/hero'
 import Header from '../components/header'
 import Line from '../components/particles/line'
 
@@ -28,9 +29,10 @@ const Home: NextPage = () => {
         <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
         <meta name="theme-color" content="#ffffff" />
       </Head>
-      
-      <main>
+
+      <main className="bg-neutral-100">
         <Header />
+        <Hero />
         <Line id="tsparticles" />
       </main>
     </div>
