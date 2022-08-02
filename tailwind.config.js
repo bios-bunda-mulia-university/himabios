@@ -29,6 +29,7 @@ module.exports = {
           },
         },
         'carribean-green': '#3ED9A1',
+        'pastel-green': '#3ED972',
         turquoise: '#31D9BB',
         black: '#000000',
         white: '#FFFFFF',
