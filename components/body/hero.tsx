@@ -1,3 +1,5 @@
+import { faRocket } from "@fortawesome/free-solid-svg-icons"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { FC } from "react"
 
 const Hero: FC = () => {
@@ -11,6 +13,9 @@ const Hero: FC = () => {
                 <br />
                 Yuk klik tombol dibawah ini untuk memulai
             </p>
+            <button className="bg-gradient-to-br from-pastel-green to-turquoise z-10 font-inter text-xl space-x-4 p-5 rounded-lg">
+                <FontAwesomeIcon icon={faRocket} className="space-x-4" /><span>Ayo Mulai Sekarang</span>
+            </button>
         </main>
     )
 }
