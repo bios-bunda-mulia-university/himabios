@@ -34,6 +34,7 @@ const Home: NextPage = () => {
         <Header />
         <Hero />
         <Line id="tsparticles" />
+        <div className="h-screen"></div>
       </main>
     </div>
   )
