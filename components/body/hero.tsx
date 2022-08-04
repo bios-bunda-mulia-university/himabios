@@ -4,7 +4,7 @@ import { FC } from "react"
 
 const Hero: FC = () => {
     return (
-        <main className="flex flex-col items-center justify-center h-screen space-y-14">
+        <div className="flex flex-col items-center justify-center h-screen space-y-14">
             <h1 className="text-neutral-900 font-inter font-bold text-6xl z-10">
                 <span className="text-transparent bg-clip-text bg-gradient-to-br from-carribean-green to-turquoise">Kesulitan</span> Memahami Materi?
             </h1>
@@ -16,7 +16,7 @@ const Hero: FC = () => {
             <button className="bg-gradient-to-br from-pastel-green to-turquoise z-10 font-inter font-semibold text-xl space-x-4 p-5 rounded-lg">
                 <FontAwesomeIcon icon={faRocket} className="space-x-4" /><span>Ayo Mulai Sekarang</span>
             </button>
-        </main>
+        </div>
     )
 }
 
