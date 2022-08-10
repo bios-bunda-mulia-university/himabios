@@ -17,8 +17,7 @@ const withMDX = require('@next/mdx')({
   }
 })
 
-module.exports = nextConfig
-module.exports = withMDX({
+module.exports = nextConfig, withMDX({
   // Append the default value with md extensions
   pageExtensions: ['ts', 'tsx', 'js', 'jsx', 'md', 'mdx']
 })
