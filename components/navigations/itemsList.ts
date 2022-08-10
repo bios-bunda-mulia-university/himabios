@@ -18,6 +18,10 @@ export const NAV_ITEMS: Array<NavTypes> = [
         href: '/showcase',
     },
     {
+        label: 'Glossary',
+        href: '/glossary',
+    },
+    {
         label: 'More',
         children: [
             {
