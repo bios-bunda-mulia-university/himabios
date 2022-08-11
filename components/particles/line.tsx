@@ -84,7 +84,7 @@ const Line: FC<Props> = ({ id }) => {
 
     // loaded particles engine
     const particlesLoaded = useCallback(async (container: Container | undefined) => {
-        await console.log(container)
+        console.log(container)
     }, [])
 
     return (

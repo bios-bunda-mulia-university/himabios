@@ -44,7 +44,7 @@ const Stars: FC<Props> = ({ id }) => {
     }, [])
 
     const particlesLoaded = useCallback(async (container: Container | undefined) => {
-        await console.log(container)
+        console.log(container)
     }, [])
 
     return (
