@@ -1,6 +1,4 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons"
-import { faInstagram, faTiktok, faGithub } from "@fortawesome/free-brands-svg-icons"
 import { FC } from "react"
 import Logo from "../logo"
 import { FOOTER_ITEMS } from "./footerIconLists"
