@@ -1,6 +1,6 @@
 import { NavTypes } from "./types";
 
-export const NAV_ITEMS: Array<NavTypes> = [
+export const NAV_ITEMS: NavTypes[] = [
     {
         label: 'Home',
         href: '/',
