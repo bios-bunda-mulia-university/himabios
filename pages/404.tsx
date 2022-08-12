@@ -1,9 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
-import { FC } from "react";
+import { ReactElement } from "react";
 import Stars from "../components/particles/stars";
 
-const NotFound: FC = () => {
+const NotFound = () => {
     const imgUrl = "https://bios-space.sfo3.digitaloceanspaces.com/404%203d.svg"
 
     return (
@@ -18,6 +18,10 @@ const NotFound: FC = () => {
             <Stars id="tsparticles" />
         </div>
     )
+}
+
+NotFound.getLayout = function getLayout(page: ReactElement) {
+    return <>{page}</>
 }
 
 export default NotFound

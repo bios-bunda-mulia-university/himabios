@@ -1,7 +1,6 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Hero from '../components/body/hero'
-import Header from '../components/header'
 import Line from '../components/particles/line'
 
 const Home: NextPage = () => {
@@ -30,8 +29,7 @@ const Home: NextPage = () => {
         <meta name="theme-color" content="#ffffff" />
       </Head>
 
-      <main className="bg-neutral-100">
-        <Header />
+      <main>
         <Hero />
         <Line id="tsparticles" />
         <div className="h-screen"></div>
