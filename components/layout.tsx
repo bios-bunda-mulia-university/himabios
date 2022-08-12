@@ -1,5 +1,5 @@
 import { FC } from "react"
-import Footer from "./footer"
+import Footer from "./footer/footer"
 import Header from "./header"
 
 type Props = {
