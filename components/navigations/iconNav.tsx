@@ -35,7 +35,6 @@ const IconNav: FC = () => {
                 onClick={handleThemeSwitch}
                 className="bg-transparent p-3 rounded-lg"
             >
-                {/* <FontAwesomeIcon icon={faSun} color="#404040" size="lg" /> */}
                 {theme === 'dark' ? <FontAwesomeIcon icon={faSun} color="#FACC15" size="lg" /> : <FontAwesomeIcon icon={faMoon} color="#F59E0B" size="lg" />}
             </button>
         </div>
