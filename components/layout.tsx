@@ -8,7 +8,7 @@ type Props = {
 
 const Layout: FC<Props> = ({ children }) => {
     return (
-        <div className="bg-neutral-100">
+        <div className="bg-neutral-100 dark:bg-woodsmoke">
             <Header />
             {children}
             <Footer />
