@@ -1,4 +1,4 @@
-import { FC, useEffect, useState } from "react"
+import { ChangeEvent, FC, MouseEventHandler, useEffect, useState } from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faMagnifyingGlass, faSun, faMoon } from "@fortawesome/free-solid-svg-icons"
 
@@ -6,7 +6,7 @@ const IconNav: FC = () => {
     const [theme, setTheme] = useState('light')
 
     useEffect(() => {
-        if(window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
             setTheme('dark')
         } else {
             setTheme('light')
@@ -14,7 +14,7 @@ const IconNav: FC = () => {
     }, [])
 
     useEffect(() => {
-        if(theme === 'dark') {
+        if (theme === 'dark') {
             document.documentElement.classList.add('dark')
         } else {
             document.documentElement.classList.remove('dark')
@@ -28,7 +28,7 @@ const IconNav: FC = () => {
     return (
         <div className="flex flex-row space-x-8 items-center justify-end ml-auto z-10">
             <button>
-                <FontAwesomeIcon icon={faMagnifyingGlass} color="#404040" size="lg" />
+                <FontAwesomeIcon icon={faMagnifyingGlass} color={theme === 'dark' ? "#E5E5E5" : "#404040"} size="lg" />
             </button>
             <button
                 type="button"

@@ -18,8 +18,9 @@ const Logo: FC<Props> = ({ imgUrl, text, sizeWidth, sizeHeight }) => {
                     width={sizeWidth}
                     height={sizeHeight}
                     alt="BIOS Logo"
+                    priority
                 />
-                <span className="flex font-inter font-bold text-3xl items-center text-black">{text}</span>
+                <span className="flex font-inter font-bold text-3xl items-center text-black dark:text-neutral-50">{text}</span>
             </a>
         </Link>
     )
