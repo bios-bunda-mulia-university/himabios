@@ -1,4 +1,4 @@
-import { FC, useCallback, useMemo } from "react"
+import { FC, useCallback, useMemo, useState } from "react"
 import Particles from "react-tsparticles"
 import { loadFull } from "tsparticles"
 import type { Engine, ISourceOptions, Container } from "tsparticles-engine"
@@ -8,6 +8,8 @@ type Props = {
 }
 
 const Line: FC<Props> = ({ id }) => {
+    const [theme, setTheme] = useState('light')
+
     const options: ISourceOptions = useMemo(() => {
         return {
             fpsLimit: 120,
@@ -35,10 +37,10 @@ const Line: FC<Props> = ({ id }) => {
             },
             particles: {
                 color: {
-                    value: "#1F8843",
+                    value: theme === 'dark' ? "#21743D" : "#0F4421",
                 },
                 links: {
-                    color: "#1F8843",
+                    color: theme === 'dark' ? "#43E97B" : "#1F8843",
                     distance: 150,
                     enable: true,
                     opacity: 0.5,
@@ -75,7 +77,7 @@ const Line: FC<Props> = ({ id }) => {
             },
             detectRetina: false,
         }
-    }, [])
+    }, [theme])
 
     // init particles engine
     const particlesInit = useCallback(async (engine: Engine) => {

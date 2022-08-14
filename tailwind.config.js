@@ -25,11 +25,14 @@ module.exports = {
             focus: '#43E97B'
           },
         },
-        'carribean-green': '#3ED9A1',
-        'pastel-green': '#3ED972',
+        carribeangreen: '#3ED9A1',
+        pastelgreen: '#3ED972',
         turquoise: '#31D9BB',
         black: '#000000',
+        raisinblack: '#202020',
         white: '#FFFFFF',
+        woodsmoke: '#121212',
+        aquamarine: '#38F9D7'
       },
       opacity: {
         '08': '0.08',
