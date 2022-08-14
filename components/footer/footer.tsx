@@ -6,22 +6,6 @@ import { FOOTER_ITEMS } from "./footerIconLists"
 const Footer: FC = () => {
     const [theme, setTheme] = useState('light')
 
-    // useEffect(() => {
-    //     if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-    //         setTheme('dark')
-    //     } else {
-    //         setTheme('light')
-    //     }
-    // }, [])
-
-    // useEffect(() => {
-    //     if (theme === 'dark') {
-    //         document.documentElement.classList.add('dark')
-    //     } else {
-    //         document.documentElement.classList.remove('dark')
-    //     }
-    // }, [theme])
-
     const imgPath = "https://bios-space.sfo3.digitaloceanspaces.com/logo-bios.png"
 
     return (
