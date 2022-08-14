@@ -16,7 +16,7 @@ const Footer: FC = () => {
                 <div className="space-x-5">
                     {FOOTER_ITEMS.map((footerIcon) => (
                         <a key={footerIcon.href} href={footerIcon.href} target={footerIcon.target} rel={footerIcon.rel}>
-                            <FontAwesomeIcon icon={footerIcon.icon} size="lg" className="hover:cursor-pointer text-neutral-700 dark:text-neutral-200" />
+                            <FontAwesomeIcon icon={footerIcon.icon} size="lg" className="hover:cursor-pointer hover:text-neutral-500 text-neutral-700 dark:text-neutral-200 hover:dark:text-neutral-400" />
                         </a>
                     ))}
                 </div>
