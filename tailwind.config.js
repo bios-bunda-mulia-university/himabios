@@ -30,6 +30,7 @@ module.exports = {
         turquoise: '#31D9BB',
         black: '#000000',
         white: '#FFFFFF',
+        woodsmoke: '#121212',
       },
       opacity: {
         '08': '0.08',
