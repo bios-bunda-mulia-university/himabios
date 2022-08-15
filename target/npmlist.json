@@ -1,0 +1,22 @@
+{
+  "version": "0.1.0",
+  "name": "himabios",
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": { "version": "6.1.2" },
+    "@fortawesome/free-brands-svg-icons": { "version": "6.1.2" },
+    "@fortawesome/free-regular-svg-icons": { "version": "6.1.2" },
+    "@fortawesome/free-solid-svg-icons": { "version": "6.1.2" },
+    "@fortawesome/react-fontawesome": { "version": "0.2.0" },
+    "@mdx-js/loader": { "version": "2.1.2" },
+    "@mdx-js/react": { "version": "2.1.2" },
+    "@next/mdx": { "version": "12.2.4" },
+    "@sentry/nextjs": { "version": "7.10.0" },
+    "next": { "version": "12.2.3" },
+    "npkill": { "version": "0.8.3" },
+    "react-dom": { "version": "18.2.0" },
+    "react-tsparticles": { "version": "2.1.4" },
+    "react": { "version": "18.2.0" },
+    "tsparticles-engine": { "version": "2.1.4" },
+    "tsparticles": { "version": "2.1.4" }
+  }
+}
