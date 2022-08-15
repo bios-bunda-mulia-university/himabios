@@ -5,6 +5,7 @@ import { faMagnifyingGlass, faSun, faMoon } from "@fortawesome/free-solid-svg-ic
 const IconNav: FC = () => {
     const [theme, setTheme] = useState('light')
 
+    // Match user system preferences theme
     useEffect(() => {
         if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
             setTheme('dark')
@@ -13,6 +14,7 @@ const IconNav: FC = () => {
         }
     }, [])
 
+    // Adding class to DOM to change theme
     useEffect(() => {
         if (theme === 'dark') {
             document.documentElement.classList.add('dark')
@@ -33,7 +35,7 @@ const IconNav: FC = () => {
             <button
                 type="button"
                 onClick={handleThemeSwitch}
-                className="bg-transparent p-3 rounded-lg"
+                className="bg-transparent p-3 rounded-lg transition-all duration-200 ease-in"
             >
                 {theme === 'dark' ? <FontAwesomeIcon icon={faSun} color="#FACC15" size="lg" /> : <FontAwesomeIcon icon={faMoon} color="#F59E0B" size="lg" />}
             </button>
