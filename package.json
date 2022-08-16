@@ -1,40 +1,41 @@
 {
-  "name": "himabios",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^6.1.2",
-    "@fortawesome/free-brands-svg-icons": "^6.1.2",
-    "@fortawesome/free-regular-svg-icons": "^6.1.2",
-    "@fortawesome/free-solid-svg-icons": "^6.1.2",
-    "@fortawesome/react-fontawesome": "^0.2.0",
-    "@mdx-js/loader": "^2.1.2",
-    "@mdx-js/react": "^2.1.2",
-    "@next/mdx": "^12.2.4",
-    "@sentry/nextjs": "^7.10.0",
-    "next": "12.2.3",
-    "npkill": "^0.8.3",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "react-tsparticles": "^2.1.4",
-    "tsparticles": "^2.1.4",
-    "tsparticles-engine": "^2.1.4"
-  },
-  "devDependencies": {
-    "@types/node": "18.6.3",
-    "@types/react": "18.0.15",
-    "@types/react-dom": "18.0.6",
-    "autoprefixer": "^10.4.8",
-    "eslint": "8.20.0",
-    "eslint-config-next": "12.2.3",
-    "postcss": "^8.4.14",
-    "tailwindcss": "^3.1.7",
-    "typescript": "4.7.4"
-  }
+	"name": "himabios",
+	"version": "0.1.0",
+	"private": true,
+	"scripts": {
+		"dev": "next dev",
+		"build": "next build",
+		"start": "next start",
+		"lint": "next lint"
+	},
+	"dependencies": {
+		"@fortawesome/fontawesome-svg-core": "^6.1.2",
+		"@fortawesome/free-brands-svg-icons": "^6.1.2",
+		"@fortawesome/free-regular-svg-icons": "^6.1.2",
+		"@fortawesome/free-solid-svg-icons": "^6.1.2",
+		"@fortawesome/react-fontawesome": "^0.2.0",
+		"@mdx-js/loader": "^2.1.2",
+		"@mdx-js/react": "^2.1.2",
+		"@next/mdx": "^12.2.4",
+		"@sentry/nextjs": "^7.10.0",
+		"next": "12.2.3",
+		"npkill": "^0.8.3",
+		"react": "18.2.0",
+		"react-dom": "18.2.0",
+		"react-tsparticles": "^2.1.4",
+		"tsparticles": "^2.1.4",
+		"tsparticles-engine": "^2.1.4"
+	},
+	"devDependencies": {
+		"@types/node": "18.6.3",
+		"@types/react": "18.0.15",
+		"@types/react-dom": "18.0.6",
+		"autoprefixer": "^10.4.8",
+		"eslint": "8.20.0",
+		"eslint-config-next": "12.2.3",
+		"postcss": "^8.4.14",
+		"prettier": "2.7.1",
+		"tailwindcss": "^3.1.7",
+		"typescript": "4.7.4"
+	}
 }
