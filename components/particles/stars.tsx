@@ -43,21 +43,11 @@ const Stars: FC<Props> = ({ id }) => {
 		await loadFull(engine)
 	}, [])
 
-	const particlesLoaded = useCallback(
-		async (container: Container | undefined) => {
-			console.log(container)
-		},
-		[]
-	)
+	const particlesLoaded = useCallback(async (container: Container | undefined) => {
+		console.log(container)
+	}, [])
 
-	return (
-		<Particles
-			id={id}
-			init={particlesInit}
-			loaded={particlesLoaded}
-			options={options}
-		/>
-	)
+	return <Particles id={id} init={particlesInit} loaded={particlesLoaded} options={options} />
 }
 
 export default Stars
