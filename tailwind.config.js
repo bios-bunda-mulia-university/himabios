@@ -31,8 +31,8 @@ module.exports = {
         black: '#000000',
         raisinblack: '#202020',
         white: '#FFFFFF',
-        woodsmoke: '#121212',
-        aquamarine: '#38F9D7'
+        aquamarine: '#38F9D7',
+        codgray: '#0C0C0C',
       },
       opacity: {
         '08': '0.08',

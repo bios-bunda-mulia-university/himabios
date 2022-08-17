@@ -5,6 +5,7 @@ import type { AppProps } from "next/app"
 import { config } from "@fortawesome/fontawesome-svg-core"
 import "@fortawesome/fontawesome-svg-core/styles.css"
 import Layout from "../components/layout"
+import { Provider } from "jotai"
 config.autoAddCss = false
 
 export type NextPageWithLayout = NextPage & {
@@ -22,7 +23,11 @@ function commonLayout(page: any) {
 function MyApp({ Component, pageProps }: AppPropsWithLayout) {
 	const getLayout = Component.getLayout || commonLayout
 
-	return getLayout(<Component {...pageProps} />)
+	return getLayout(
+		<Provider>
+			<Component {...pageProps} />
+		</Provider>
+	)
 }
 
 export default MyApp

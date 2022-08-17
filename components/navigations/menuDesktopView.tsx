@@ -7,10 +7,7 @@ const MenuDesktopView: FC = () => {
 		<div className='flex flex-row justify-start items-center px-16'>
 			{NAV_ITEMS.map((navItem) => (
 				<Link key={navItem.label} href={navItem.label}>
-					<a
-						key={navItem.label}
-						className='px-3 font-medium font-inter text-lg text-neutral-600 dark:text-neutral-100 dark:hover:text-primary-dark-hover transition ease-in-out hover:text-primary-light-hover hover:-translate-y-1'
-					>
+					<a key={navItem.label} className='px-3 font-medium font-inter text-lg text-neutral-600 dark:text-neutral-100 dark:hover:text-primary-dark-hover transition ease-in-out hover:text-primary-light-hover hover:-translate-y-1'>
 						{navItem.label}
 					</a>
 				</Link>

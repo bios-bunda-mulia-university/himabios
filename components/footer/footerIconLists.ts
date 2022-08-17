@@ -1,9 +1,5 @@
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons"
-import {
-	faInstagram,
-	faTiktok,
-	faGithub,
-} from "@fortawesome/free-brands-svg-icons"
+import { faInstagram, faTiktok, faGithub } from "@fortawesome/free-brands-svg-icons"
 import { FooterTypes } from "./types"
 
 export const FOOTER_ITEMS: FooterTypes[] = [
