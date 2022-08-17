@@ -18,6 +18,7 @@
 		"@mdx-js/react": "^2.1.2",
 		"@next/mdx": "^12.2.4",
 		"@sentry/nextjs": "^7.10.0",
+		"jotai": "^1.7.8",
 		"next": "12.2.3",
 		"npkill": "^0.8.3",
 		"react": "18.2.0",
