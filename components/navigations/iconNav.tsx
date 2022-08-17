@@ -23,12 +23,12 @@ const IconNav: FC = () => {
 	}
 
 	return (
-		<div className='flex flex-row space-x-8 items-center justify-end ml-auto z-10'>
-			<button>
-				<FontAwesomeIcon icon={faMagnifyingGlass} color={darkMode ? "#E5E5E5" : "#404040"} size='lg' />
+		<div className="flex flex-row space-x-8 items-center justify-end ml-auto z-10">
+			<button name="search bar">
+				<FontAwesomeIcon icon={faMagnifyingGlass} color={darkMode ? "#E5E5E5" : "#404040"} size="lg" />
 			</button>
-			<button type='button' onClick={handleThemeSwitch} className='bg-transparent p-3 rounded-lg transition-all duration-200 ease-in'>
-				<FontAwesomeIcon icon={darkMode ? faSun : faMoon} color={darkMode ? "#FACC15" : "#F59E0B"} size='lg' />
+			<button name="toggle dark mode" type="button" onClick={handleThemeSwitch} className="bg-transparent p-3 rounded-lg transition-all duration-200 ease-in">
+				<FontAwesomeIcon icon={darkMode ? faSun : faMoon} color={darkMode ? "#FACC15" : "#F59E0B"} size="lg" />
 			</button>
 		</div>
 	)
