@@ -2,6 +2,7 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import Hero from '../components/body/hero'
 import Line from '../components/particles/line'
+import WhyBios from '../components/sections/whyBios'
 
 const Home: NextPage = () => {
   return (
@@ -32,7 +33,9 @@ const Home: NextPage = () => {
       <main>
         <Hero />
         <Line id="tsparticles" />
-        <div className="h-screen"></div>
+        <div className="h-screen">
+            <WhyBios></WhyBios>
+        </div>
       </main>
     </div>
   )
