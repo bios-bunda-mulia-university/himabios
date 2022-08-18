@@ -27,7 +27,7 @@ const IconNav: FC = () => {
 			<button name="search bar">
 				<FontAwesomeIcon icon={faMagnifyingGlass} color={darkMode ? "#E5E5E5" : "#404040"} size="lg" />
 			</button>
-			<button name="toggle dark mode" type="button" onClick={handleThemeSwitch} className="bg-transparent p-3 rounded-lg transition-all duration-200 ease-in">
+			<button name="toggle dark mode" type="button" onClick={handleThemeSwitch} className="bg-transparent py-3 px-4 rounded-lg transition-all duration-200 ease-in">
 				<FontAwesomeIcon icon={darkMode ? faSun : faMoon} color={darkMode ? "#FACC15" : "#F59E0B"} size="lg" />
 			</button>
 		</div>
