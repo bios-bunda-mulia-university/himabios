@@ -1,4 +1,5 @@
-import { FC } from "react"
+import { FC } from 'react'
+import Image from 'next/image'
 
 const WhyBios: FC = () => {
 	return (
@@ -14,9 +15,7 @@ const WhyBios: FC = () => {
 					<li>✅ Mau belajar secara gratis tapi ilmunya gak nanggung-nanggung?</li>
 				</ol>
 			</article>
-			<figure className="z-10 bg-red-500">
-				<img src="https://dummyimage.com/200x300/000/fff&text=Image" alt="" />
-			</figure>
+			<Image className="z-10" src="" alt="" width={100} height={100} />
 		</div>
 	)
 }
