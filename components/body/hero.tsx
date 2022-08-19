@@ -1,6 +1,6 @@
-import { faRocket } from "@fortawesome/free-solid-svg-icons"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { FC } from "react"
+import { faRocket } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { FC } from 'react'
 
 const Hero: FC = () => {
 	return (

@@ -33,8 +33,8 @@ const Home: NextPage = () => {
       <main>
         <Hero />
         <Line id="tsparticles" />
+        <WhyBios />
         <div className="h-screen">
-            <WhyBios></WhyBios>
         </div>
       </main>
     </div>
